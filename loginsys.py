@@ -3,7 +3,8 @@ import sys
 import time
 import os
 
-filename = 'member.csv'
+folder_script = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(folder_script, 'member.csv')
 if not os.path.exists(filename):
     with open(filename, mode='w', newline='') as file:
         writer = csv.writer(file)
