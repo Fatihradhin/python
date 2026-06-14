@@ -28,3 +28,4 @@ else:
     print('Diskon:\n-')
 print(" ")    
 print(f'Total: {akhir:,}')
+
